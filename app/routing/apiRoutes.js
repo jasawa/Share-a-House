@@ -1,9 +1,4 @@
 
-// should have a 
-
-// should have a 
-// ===============================================================================
-
 // LOAD DATA  ------------------
 // It is linking the routing to a "data" source which holds an array of information on friends (ie. the housemates)
 

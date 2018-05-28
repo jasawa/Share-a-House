@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Share a House Survey</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -67,9 +70,30 @@
 
         <br><br>
         <div>
-            <button class="btn btn-lg btn-primary"><span class="fa fa-pencil-square-o"></span> Submit Survey</button></a>    
+            <button class="btn btn-lg btn-primary" id="surveySubmit"><span class="fa fa-pencil-square-o"></span> Submit Survey</button></a>    
         </div>
 </div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#surveySubmit").on("click", function(event) {
+            event.preventDefault();
+            var userAnswers = {
+                name: $("#name").val().trim(),
+                photo: $("#photoImage").val().trim(),
+                userNums: [
+                    $("#ques1").val().trim()
+                ]
+            };
+            console.log("User Answers = " + JSON.stringify(userAnswers));
+
+        });
+
+
+
+
+    });
+</script>
 
     
 </body>
