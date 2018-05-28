@@ -7,11 +7,70 @@
     <title>Share a House Survey</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
 </head>
 <body>
+
+<div class="container">
+    <br>
+    <br>
+    <h2 class="text-center"><span class="fa fa-pencil-square-o"></span> Survey Questions</h2>
+
+    <h3>About You</h3>
+    <br>
+    <form>
+        <div class="form-group">
+            <label for="name">Name  (Required)</label>
+            <input type="text" class="form-control" id="name" placeholder="">
+        </div>
+        <div class="form-group">
+            <label for="photoImage">Link to Photo Image  (Required)</label>
+            <input type="text" class="form-control" id="photoImage" placeholder="">
+        </div>
+        <br>
+        <br>
+    </form>
+    <h3>Question 1</h3>
+    <h4>Your mind is always buzzing with unexplored ideas and plans</h4>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="ques1" value="1">
+            <label class="form-check-label" for="ques1">
+              1 (Strongly Disagree)
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="ques1" value="2">
+            <label class="form-check-label" for="ques1">
+              2
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="ques1" value="3">
+            <label class="form-check-label" for="ques1">
+              3
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="ques1" value="4">
+            <label class="form-check-label" for="ques1">
+              4
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="ques1" value="5">
+            <label class="form-check-label" for="ques1">
+              5  (Strongly Agree)
+            </label>
+        </div>
+
+        <br><br>
+        <div>
+            <button class="btn btn-lg btn-primary"><span class="fa fa-pencil-square-o"></span> Submit Survey</button></a>    
+        </div>
+</div>
+
     
 </body>
 </html>
