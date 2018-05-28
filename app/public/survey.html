@@ -67,10 +67,17 @@
               5  (Strongly Agree)
             </label>
         </div>
+        <br>
+        <h4>Question 2</h4>
+        <form action="" id="ques2">
+            <input type="radio" name="ques" value="1"> 1<br>
+            <input type="radio" name="ques" value="2"> 2<br>
+            <input type="radio" name="ques" value="3"> 3
+        </form>
 
         <br><br>
         <div>
-            <button class="btn btn-lg btn-primary" id="surveySubmit"><span class="fa fa-pencil-square-o"></span> Submit Survey</button></a>    
+            <button class="btn btn-lg btn-primary" id="surveySubmit"><span class="fa fa-pencil-square-o"></span> Submit Survey</button>   
         </div>
 </div>
 
@@ -81,8 +88,9 @@
             var userAnswers = {
                 name: $("#name").val().trim(),
                 photo: $("#photoImage").val().trim(),
-                userNums: [
-                    $("#ques1").val().trim()
+                scores: [
+                    $("#ques1").val().trim(),
+                    $("#ques2").val().trim()
                 ]
             };
             console.log("User Answers = " + JSON.stringify(userAnswers));
