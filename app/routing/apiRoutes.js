@@ -25,8 +25,12 @@ module.exports = function(app) {
     // and compatibility logic
 
     app.post("/api/friends", function(req, res) {
+       // compare survey scores of new user with survey scores of friends already in the data base
+       var closestFriend = 100; // make this start high so that closestFriend will end up with smallest total
+       
+       
+       
         friends.push(req.body);
-
 
         console.log(friends);
     });
